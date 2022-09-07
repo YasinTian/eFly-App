@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		840473F72420D600009B07DC /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 840473F62420D600009B07DC /* MDConfig.plist */; };
+		840474012420D600009B07DC /* libeFlyDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 840474002420D600009B07DC /* libeFlyDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		840474062420D600009B07DC /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840474052420D600009B07DC /* JavaScriptCore.framework */; };
+		840474082420D600009B07DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840474072420D600009B07DC /* Foundation.framework */; };
+		8404740A2420D600009B07DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840474092420D600009B07DC /* UIKit.framework */; };
+		8404740F2420D600009B07DC /* eFlyDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8404740E2420D600009B07DC /* eFlyDylib.mm */; };
+		840474122420D600009B07DC /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 840474112420D600009B07DC /* MDConfigManager.h */; };
+		840474142420D600009B07DC /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 840474132420D600009B07DC /* MDConfigManager.m */; };
+		840474162420D600009B07DC /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 840474152420D600009B07DC /* MDCycriptManager.h */; };
+		840474182420D600009B07DC /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 840474172420D600009B07DC /* MDCycriptManager.m */; };
+		8404741A2420D600009B07DC /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 840474192420D600009B07DC /* MDMethodTrace.h */; };
+		8404741C2420D600009B07DC /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404741B2420D600009B07DC /* MDMethodTrace.m */; };
+		8404741F2420D600009B07DC /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 8404741E2420D600009B07DC /* a1a2-selectortramps-arm.s */; };
+		840474212420D600009B07DC /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 840474202420D600009B07DC /* a1a2-selectortramps-arm64.s */; };
+		840474232420D600009B07DC /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 840474222420D600009B07DC /* a1a2-selectortramps-i386.s */; };
+		840474252420D600009B07DC /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 840474242420D600009B07DC /* a1a2-selectortramps-x86_64.s */; };
+		840474272420D600009B07DC /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 840474262420D600009B07DC /* a2a3-selectortramps-arm.s */; };
+		840474292420D600009B07DC /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 840474282420D600009B07DC /* a2a3-selectortramps-i386.s */; };
+		8404742B2420D600009B07DC /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 8404742A2420D600009B07DC /* a2a3-selectortramps-x86_64.s */; };
+		8404742D2420D600009B07DC /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 8404742C2420D600009B07DC /* OCMethodTrace.h */; };
+		8404742F2420D600009B07DC /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404742E2420D600009B07DC /* OCMethodTrace.m */; };
+		840474312420D600009B07DC /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = 840474302420D600009B07DC /* OCSelectorTrampolines.h */; };
+		840474332420D600009B07DC /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = 840474322420D600009B07DC /* OCSelectorTrampolines.mm */; };
+		840474372420D600009B07DC /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 840474362420D600009B07DC /* LLDBTools.h */; };
+		840474392420D600009B07DC /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 840474382420D600009B07DC /* LLDBTools.mm */; };
+		8404743E2420D600009B07DC /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404743D2420D600009B07DC /* AntiAntiDebug.m */; };
+		840474412420D600009B07DC /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 840474402420D600009B07DC /* fishhook.c */; };
+		840474432420D600009B07DC /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 840474422420D600009B07DC /* fishhook.h */; };
+		840474452420D600009B07DC /* eFlyDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 840474442420D600009B07DC /* eFlyDylib.h */; };
+		840474472420D600009B07DC /* eFlyDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 840474462420D600009B07DC /* eFlyDylib.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		840474022420D600009B07DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 840473E42420D600009B07DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 840473FF2420D600009B07DC;
+			remoteInfo = eFlyDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		840473EC2420D600009B07DC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				840474012420D600009B07DC /* libeFlyDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		840473EF2420D600009B07DC /* eFly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eFly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		840473F22420D600009B07DC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		840473F42420D600009B07DC /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "quick-resign.sh"; sourceTree = "<group>"; };
+		840473F62420D600009B07DC /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MDConfig.plist; sourceTree = "<group>"; };
+		840473F92420D600009B07DC /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; path = "put ipa or app here"; sourceTree = "<group>"; };
+		840473FA2420D600009B07DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840474002420D600009B07DC /* libeFlyDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libeFlyDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		840474052420D600009B07DC /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		840474072420D600009B07DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		840474092420D600009B07DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8404740D2420D600009B07DC /* eFlyDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = eFlyDylib.xm; sourceTree = "<group>"; };
+		8404740E2420D600009B07DC /* eFlyDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = eFlyDylib.mm; sourceTree = "<group>"; };
+		840474112420D600009B07DC /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDConfigManager.h; sourceTree = "<group>"; };
+		840474132420D600009B07DC /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDConfigManager.m; sourceTree = "<group>"; };
+		840474152420D600009B07DC /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCycriptManager.h; sourceTree = "<group>"; };
+		840474172420D600009B07DC /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCycriptManager.m; sourceTree = "<group>"; };
+		840474192420D600009B07DC /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMethodTrace.h; sourceTree = "<group>"; };
+		8404741B2420D600009B07DC /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMethodTrace.m; sourceTree = "<group>"; };
+		8404741E2420D600009B07DC /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		840474202420D600009B07DC /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		840474222420D600009B07DC /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		840474242420D600009B07DC /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		840474262420D600009B07DC /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		840474282420D600009B07DC /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		8404742A2420D600009B07DC /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		8404742C2420D600009B07DC /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMethodTrace.h; sourceTree = "<group>"; };
+		8404742E2420D600009B07DC /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMethodTrace.m; sourceTree = "<group>"; };
+		840474302420D600009B07DC /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		840474322420D600009B07DC /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		840474342420D600009B07DC /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; path = selectortramps.mac; sourceTree = "<group>"; };
+		840474362420D600009B07DC /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLDBTools.h; sourceTree = "<group>"; };
+		840474382420D600009B07DC /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LLDBTools.mm; sourceTree = "<group>"; };
+		8404743B2420D600009B07DC /* eFlyDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "eFlyDylib-Prefix.pch"; path = "../eFlyDylib-Prefix.pch"; sourceTree = "<group>"; };
+		8404743D2420D600009B07DC /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AntiAntiDebug.m; sourceTree = "<group>"; };
+		840474402420D600009B07DC /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		840474422420D600009B07DC /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		840474442420D600009B07DC /* eFlyDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = eFlyDylib.h; sourceTree = "<group>"; };
+		840474462420D600009B07DC /* eFlyDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eFlyDylib.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		840473E92420D600009B07DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840473FD2420D600009B07DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840474062420D600009B07DC /* JavaScriptCore.framework in Frameworks */,
+				8404740A2420D600009B07DC /* UIKit.framework in Frameworks */,
+				840474082420D600009B07DC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		840473E32420D600009B07DC = {
+			isa = PBXGroup;
+			children = (
+				840473F12420D600009B07DC /* eFly */,
+				8404740B2420D600009B07DC /* eFlyDylib */,
+				840474042420D600009B07DC /* Frameworks */,
+				840473F02420D600009B07DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		840473F02420D600009B07DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				840473EF2420D600009B07DC /* eFly.app */,
+				840474002420D600009B07DC /* libeFlyDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		840473F12420D600009B07DC /* eFly */ = {
+			isa = PBXGroup;
+			children = (
+				840473F22420D600009B07DC /* icon.png */,
+				840473FA2420D600009B07DC /* Info.plist */,
+				840473F32420D600009B07DC /* Scripts */,
+				840473F52420D600009B07DC /* Config */,
+				840473F82420D600009B07DC /* TargetApp */,
+			);
+			path = eFly;
+			sourceTree = "<group>";
+		};
+		840473F32420D600009B07DC /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				840473F42420D600009B07DC /* quick-resign.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		840473F52420D600009B07DC /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				840473F62420D600009B07DC /* MDConfig.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		840473F82420D600009B07DC /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				840473F92420D600009B07DC /* put ipa or app here */,
+			);
+			path = TargetApp;
+			sourceTree = "<group>";
+		};
+		840474042420D600009B07DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				840474052420D600009B07DC /* JavaScriptCore.framework */,
+				840474072420D600009B07DC /* Foundation.framework */,
+				840474092420D600009B07DC /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8404740B2420D600009B07DC /* eFlyDylib */ = {
+			isa = PBXGroup;
+			children = (
+				840474442420D600009B07DC /* eFlyDylib.h */,
+				840474462420D600009B07DC /* eFlyDylib.m */,
+				8404740C2420D600009B07DC /* Logos */,
+				840474102420D600009B07DC /* Config */,
+				8404741D2420D600009B07DC /* Trace */,
+				840474352420D600009B07DC /* Tools */,
+				8404743C2420D600009B07DC /* AntiAntiDebug */,
+				8404743F2420D600009B07DC /* fishhook */,
+				8404743A2420D600009B07DC /* Supporting Files */,
+			);
+			path = eFlyDylib;
+			sourceTree = "<group>";
+		};
+		8404740C2420D600009B07DC /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				8404740D2420D600009B07DC /* eFlyDylib.xm */,
+				8404740E2420D600009B07DC /* eFlyDylib.mm */,
+			);
+			path = Logos;
+			sourceTree = "<group>";
+		};
+		840474102420D600009B07DC /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				840474112420D600009B07DC /* MDConfigManager.h */,
+				840474132420D600009B07DC /* MDConfigManager.m */,
+				840474152420D600009B07DC /* MDCycriptManager.h */,
+				840474172420D600009B07DC /* MDCycriptManager.m */,
+				840474192420D600009B07DC /* MDMethodTrace.h */,
+				8404741B2420D600009B07DC /* MDMethodTrace.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		8404741D2420D600009B07DC /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				8404741E2420D600009B07DC /* a1a2-selectortramps-arm.s */,
+				840474202420D600009B07DC /* a1a2-selectortramps-arm64.s */,
+				840474222420D600009B07DC /* a1a2-selectortramps-i386.s */,
+				840474242420D600009B07DC /* a1a2-selectortramps-x86_64.s */,
+				840474262420D600009B07DC /* a2a3-selectortramps-arm.s */,
+				840474282420D600009B07DC /* a2a3-selectortramps-i386.s */,
+				8404742A2420D600009B07DC /* a2a3-selectortramps-x86_64.s */,
+				8404742C2420D600009B07DC /* OCMethodTrace.h */,
+				8404742E2420D600009B07DC /* OCMethodTrace.m */,
+				840474302420D600009B07DC /* OCSelectorTrampolines.h */,
+				840474322420D600009B07DC /* OCSelectorTrampolines.mm */,
+				840474342420D600009B07DC /* selectortramps.mac */,
+			);
+			path = Trace;
+			sourceTree = "<group>";
+		};
+		840474352420D600009B07DC /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				840474362420D600009B07DC /* LLDBTools.h */,
+				840474382420D600009B07DC /* LLDBTools.mm */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		8404743A2420D600009B07DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8404743B2420D600009B07DC /* eFlyDylib-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8404743C2420D600009B07DC /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				8404743D2420D600009B07DC /* AntiAntiDebug.m */,
+			);
+			path = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		8404743F2420D600009B07DC /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				840474402420D600009B07DC /* fishhook.c */,
+				840474422420D600009B07DC /* fishhook.h */,
+			);
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		840473FE2420D600009B07DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840474162420D600009B07DC /* MDCycriptManager.h in Headers */,
+				8404741A2420D600009B07DC /* MDMethodTrace.h in Headers */,
+				840474432420D600009B07DC /* fishhook.h in Headers */,
+				840474372420D600009B07DC /* LLDBTools.h in Headers */,
+				840474122420D600009B07DC /* MDConfigManager.h in Headers */,
+				840474452420D600009B07DC /* eFlyDylib.h in Headers */,
+				840474312420D600009B07DC /* OCSelectorTrampolines.h in Headers */,
+				8404742D2420D600009B07DC /* OCMethodTrace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		840473EE2420D600009B07DC /* eFly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8404744D2420D600009B07DC /* Build configuration list for PBXNativeTarget "eFly" */;
+			buildPhases = (
+				840473E82420D600009B07DC /* Sources */,
+				840473E92420D600009B07DC /* Frameworks */,
+				840473EA2420D600009B07DC /* ShellScript */,
+				840473EB2420D600009B07DC /* Resources */,
+				840473EC2420D600009B07DC /* CopyFiles */,
+				840473ED2420D600009B07DC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				840474032420D600009B07DC /* PBXTargetDependency */,
+			);
+			name = eFly;
+			productName = eFly;
+			productReference = 840473EF2420D600009B07DC /* eFly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		840473FF2420D600009B07DC /* eFlyDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8404744A2420D600009B07DC /* Build configuration list for PBXNativeTarget "eFlyDylib" */;
+			buildPhases = (
+				840473FB2420D600009B07DC /* ShellScript */,
+				840473FC2420D600009B07DC /* Sources */,
+				840473FD2420D600009B07DC /* Frameworks */,
+				840473FE2420D600009B07DC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eFlyDylib;
+			productName = eFlyDylib;
+			productReference = 840474002420D600009B07DC /* libeFlyDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		840473E42420D600009B07DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = efly;
+				TargetAttributes = {
+					840473EE2420D600009B07DC = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					840473FF2420D600009B07DC = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 840473E72420D600009B07DC /* Build configuration list for PBXProject "eFly" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 840473E32420D600009B07DC;
+			productRefGroup = 840473E32420D600009B07DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				840473EE2420D600009B07DC /* eFly */,
+				840473FF2420D600009B07DC /* eFlyDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		840473EB2420D600009B07DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840473F72420D600009B07DC /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		840473EA2420D600009B07DC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		840473ED2420D600009B07DC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		840473FB2420D600009B07DC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		840473E82420D600009B07DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840473FC2420D600009B07DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840474182420D600009B07DC /* MDCycriptManager.m in Sources */,
+				840474212420D600009B07DC /* a1a2-selectortramps-arm64.s in Sources */,
+				8404741F2420D600009B07DC /* a1a2-selectortramps-arm.s in Sources */,
+				840474252420D600009B07DC /* a1a2-selectortramps-x86_64.s in Sources */,
+				8404742F2420D600009B07DC /* OCMethodTrace.m in Sources */,
+				840474142420D600009B07DC /* MDConfigManager.m in Sources */,
+				840474412420D600009B07DC /* fishhook.c in Sources */,
+				8404743E2420D600009B07DC /* AntiAntiDebug.m in Sources */,
+				840474332420D600009B07DC /* OCSelectorTrampolines.mm in Sources */,
+				840474232420D600009B07DC /* a1a2-selectortramps-i386.s in Sources */,
+				840474292420D600009B07DC /* a2a3-selectortramps-i386.s in Sources */,
+				840474472420D600009B07DC /* eFlyDylib.m in Sources */,
+				840474272420D600009B07DC /* a2a3-selectortramps-arm.s in Sources */,
+				8404740F2420D600009B07DC /* eFlyDylib.mm in Sources */,
+				840474392420D600009B07DC /* LLDBTools.mm in Sources */,
+				8404742B2420D600009B07DC /* a2a3-selectortramps-x86_64.s in Sources */,
+				8404741C2420D600009B07DC /* MDMethodTrace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		840474032420D600009B07DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 840473FF2420D600009B07DC /* eFlyDylib */;
+			targetProxy = 840474022420D600009B07DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		840474482420D600009B07DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		840474492420D600009B07DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8404744B2420D600009B07DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4EET99S37L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "eFlyDylib/eFlyDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libeFlyDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"eFlyDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		8404744C2420D600009B07DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 4EET99S37L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "eFlyDylib/eFlyDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libeFlyDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"eFlyDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8404744E2420D600009B07DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6596UNG23C;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = eFly/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = YES;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yasin.efly.eFly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8404744F2420D600009B07DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6596UNG23C;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = eFly/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = YES;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yasin.efly.eFly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		840473E72420D600009B07DC /* Build configuration list for PBXProject "eFly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840474482420D600009B07DC /* Debug */,
+				840474492420D600009B07DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8404744A2420D600009B07DC /* Build configuration list for PBXNativeTarget "eFlyDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8404744B2420D600009B07DC /* Debug */,
+				8404744C2420D600009B07DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8404744D2420D600009B07DC /* Build configuration list for PBXNativeTarget "eFly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8404744E2420D600009B07DC /* Debug */,
+				8404744F2420D600009B07DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 840473E42420D600009B07DC /* Project object */;
+}
